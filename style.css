@@ -1,0 +1,145 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY + ANIMATED BACKGROUND ===== */
+body {
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: white;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  animation: bgSlider 25s infinite ease-in-out;
+}
+
+/* Smooth background animation */
+@keyframes bgSlider {
+  0% {
+    background-image: url("image copy 3.png");
+  }
+  25% {
+    background-image: url("image copy 2.png");
+  }
+  50% {
+    background-image: url("image.png");
+  }
+  75% {
+    background-image: url("image copy.png");
+  }
+  100% {
+    background-image: url("image copy 3.png");
+  }
+}
+
+/* ===== NAVBAR ===== */
+/* ===== HEADER ===== */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+/* ===== LOGO (outside navbar background) ===== */
+.logo {
+  width: 140px;               /* reserves space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: transparent;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+
+  background: white;
+  padding: 6px;
+  border-radius: 50%;
+
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  flex: 1;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 40px;
+
+  background: rgba(29, 74, 221, 0.65);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== NAV ITEMS ===== */
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+/* Push login to right */
+.login {
+  margin-left: auto;
+}
+
+/* Push login to right */
+.login {
+  margin-left: auto;
+}
+
+/* ===== LINKS ===== */
+nav a {
+  text-decoration: none;
+  padding: 12px 22px;
+  margin: 0 10px;
+
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, 0.85);
+  color: #1d1d1d;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: all 0.35s ease;
+}
+
+/* Hover animation */
+nav a:hover {
+  background: linear-gradient(135deg, #a208df, #4b3cff);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Login button special highlight */
+.login a {
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  color: white;
+}
+
+.login a:hover {
+  background: linear-gradient(135deg, #ff5722, #ff9800);
+}
