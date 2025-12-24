@@ -10,7 +10,9 @@ body {
   height: 100vh;
   font-family: "Segoe UI", Tahoma, sans-serif;
   color: white;
-
+  justify-content:center;
+  display: flex;
+  align-items:center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -142,4 +144,81 @@ nav a:hover {
 
 .login a:hover {
   background: linear-gradient(135deg, #ff5722, #ff9800);
+
 }
+
+
+.info{
+    width:600px;
+    height: 350px;
+    background:#020617;
+    border-radius:12px;
+    box-shadow:0 0 25px #38bdf8;
+    padding:20px;
+      backdrop-filter: blur(10px);
+      justify-content: center;
+       align-items:center;
+       text-align: center;
+  background: rgba(29, 74, 221, 0.3);
+  backdrop-filter: blur(10px);
+}
+}
+.info h2{
+    text-align:center;
+    color:#38bdf8;
+    margin: 20px;
+}
+.info label,input{
+  padding: 5px;
+  margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .container{
+    width:420px;
+    background:#020617;
+    border-radius:12px;
+    box-shadow:0 0 25px #38bdf8;
+    padding:20px;
+}
+
+h2{
+    text-align:center;
+    color:#38bdf8;
+}
+
+#chat{
+    height:300px;
+    overflow-y:auto;
+    background:#020617;
+    padding:10px;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+.user{color:#22c55e;text-align:right;margin:5px;}
+.bot{color:#e5e7eb;text-align:left;margin:5px;}
+
+input{
+    width:65%;
+    padding:10px;
+    border-radius:6px;
+    border:none;
+}
+
+button{
+    padding:10px;
+    border:none;
+    border-radius:6px;
+    background:#38bdf8;
+    cursor:pointer;
+} */
